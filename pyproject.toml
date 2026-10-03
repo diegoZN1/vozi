@@ -1,0 +1,19 @@
+[project]
+name = "vozi"
+version = "1.0.0"
+description = "Vozi: dictado por voz local y rápido para Linux (Wayland/GNOME)"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+dependencies = [
+    "faster-whisper>=1.1",
+    "numpy",
+]
+
+[project.scripts]
+vozi = "vozi.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
